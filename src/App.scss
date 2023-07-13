@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background: #f8f9fb;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 2;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: row;
+  background: #ededed;
+  padding: 10px;
+}
+
+.profileImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
