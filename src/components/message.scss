@@ -1,0 +1,13 @@
+.message-container {
+    display: flex;
+    
+    .message {
+        padding: 0.5rem;
+        background-color: azure;
+        margin-top: 0.25rem;
+        border-radius: 0.25rem;
+    }
+    .my-message{
+        margin-left: auto;
+    }
+}

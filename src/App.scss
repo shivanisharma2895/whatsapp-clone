@@ -21,19 +21,16 @@
 
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
+.app-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
   height: 100vh;
-  width: 100%;
-  background: #f8f9fb;
+  background: #fff;
 }
 
-.container1 {
-  @include flex-col;
-  height: 100%;
-  flex: 1;
-
+.contact-list {
+  height: 100vh;
+  background-color: #fff;
 }
 
 .container2 {
@@ -150,22 +147,9 @@
 }
 
 .messageContainer {
-  @include flex-col;
-  height: 100%;
-}
-
-.messagediv {
-  display: flex;
-  margin: 5px 16px;
-
-}
-
-.message {
-
-  background: #daf8cb;
-  font-size: 19px;
-  max-width: 50%;
-  color: #303030;
-  padding: 8px 10px;
-
+  height: calc(100vh - 70px - 80px);
+  overflow-y: scroll;
+  background-color: #98ff64;
+  padding: 0.25rem;
+  box-sizing: border-box;
 }
