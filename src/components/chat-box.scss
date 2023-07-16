@@ -1,0 +1,26 @@
+.chatBox {
+    display: flex;
+    background: #f0f0f0;
+    padding: 10px;
+    align-items: center;
+    bottom: 0;
+}
+
+.searchcontainer2 {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+}
+
+.searchinput {
+    margin-left: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+}

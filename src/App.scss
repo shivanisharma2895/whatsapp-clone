@@ -8,7 +8,7 @@
   flex-direction: row;
   background: white;
   border-radius: 16px;
-  width: 100%;
+  width: 90%;
   padding: 20px 0;
 }
 
@@ -105,38 +105,6 @@
   color: rgba (0, 0, 0, 0.8);
 }
 
-.profileHeader {
-  display: flex;
-  flex-direction: row;
-  background: #ededed;
-  padding: 15px;
-  align-items: center;
-  gap: 10px;
-}
-
-.profilePic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.chatBox {
-  display: flex;
-  background: #f0f0f0;
-  padding: 10px;
-  align-items: center;
-  bottom: 0;
-}
-
-.searchcontainer2 {
-  @include searchCont;
-}
-
-.searchInput2 {
-  @include searchIn;
-  margin-left: 10px;
-}
-
 .emoji {
   width: 20px;
   height: 20px;
@@ -152,4 +120,15 @@
   background-color: #98ff64;
   padding: 0.25rem;
   box-sizing: border-box;
+}
+
+#msg-icn {
+
+  padding-left: 240px;
+  padding-top: 10px;
+}
+
+#line {
+  padding-left: 10px;
+  padding-top: 10px;
 }
