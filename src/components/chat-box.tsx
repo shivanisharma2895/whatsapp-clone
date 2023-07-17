@@ -1,8 +1,12 @@
 import './chat-box.scss'
-
+import { GrAdd } from "react-icons/gr"
+import { RiMicLine } from "react-icons/ri"
 export const ChatBox = () => {
     return (
+
+
         <div className='chatBox'>
+            <GrAdd id='add' />
             <div className='searchcontainer2'>
                 <img
                     className='emoji'
@@ -10,8 +14,11 @@ export const ChatBox = () => {
                     alt=''
                 />
                 <input className='searchinput' placeholder=' Type a message' />
+
             </div>
+            <RiMicLine id='mic' />
         </div>
+
 
     );
 }

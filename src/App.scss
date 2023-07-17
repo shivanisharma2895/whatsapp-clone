@@ -74,7 +74,7 @@
 .contactItem {
   display: flex;
   flex-direction: row;
-  width: 98%;
+  width: 100%;
   border-bottom: 1px solid #f2f2f2;
   cursor: pointer;
   background: white;
@@ -124,11 +124,21 @@
 
 #msg-icn {
 
-  padding-left: 240px;
+  padding-left: 20px;
   padding-top: 10px;
 }
 
 #line {
   padding-left: 10px;
   padding-top: 10px;
+}
+
+#user {
+  padding-left: 200px;
+  padding-top: 10px;
+}
+
+#filter {
+  padding-left: 310px;
+  justify-content: flex-start;
 }
