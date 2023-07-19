@@ -1,3 +1,4 @@
+
 .app-container {
   display: grid;
   grid-template-columns: 350px 1fr;
@@ -27,18 +28,24 @@
 .searchBox {
   background: #f6f6f6;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 28px;
+  gap: 1rem;
+  align-items: center;
 }
 
 .searchContainer {
-
   display: flex;
   flex-direction: row;
   background: white;
   border-radius: 16px;
-  width: 90%;
   padding: 20px 0;
 }
 
+
+.filter-svg {
+  justify-self: center;
+}
 .searchIcon {
   width: 15px;
   height: 15px;
@@ -123,6 +130,5 @@
 }
 
 #filter {
-  padding-left: 310px;
   justify-content: flex-start;
 }
