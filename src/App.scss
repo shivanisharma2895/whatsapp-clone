@@ -1,26 +1,3 @@
-@mixin flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin searchCont {
-  display: flex;
-  flex-direction: row;
-  background: white;
-  border-radius: 16px;
-  width: 90%;
-  padding: 20px 0;
-}
-
-@mixin searchIn {
-  width: 100%;
-  outline: none;
-  border: none;
-  padding-left: 20px;
-  font-size: 15px;
-
-}
-
 .app-container {
   display: grid;
   grid-template-columns: 350px 1fr;
@@ -33,11 +10,6 @@
   background-color: #fff;
 }
 
-.container2 {
-  @include flex-col;
-  height: 100%;
-  flex: 2;
-}
 
 .profileInfo {
   display: flex;
@@ -58,7 +30,13 @@
 }
 
 .searchContainer {
-  @include searchCont;
+
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  padding: 20px 0;
 }
 
 .searchIcon {
@@ -68,7 +46,11 @@
 }
 
 .searchInput {
-  @include searchIn;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 15px;
 }
 
 .contactItem {
@@ -83,11 +65,13 @@
 .profileIcon {
   width: 38px;
   height: 38px;
+  border-radius: 50%;
 
 }
 
 .contactInfo {
-  @include flex-col;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0 19px;
 }

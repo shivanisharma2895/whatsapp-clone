@@ -3,15 +3,21 @@ import { BsFillChatLeftTextFill } from "react-icons/bs"
 import { AiOutlineMore } from "react-icons/ai"
 import { FaUsers } from "react-icons/fa"
 import { BiCheckDouble } from "react-icons/bi"
-const ContactContainer = () => {
+import { contactList } from "../data/contact-list-data"
+import { userData } from "../interfaces/userData"
+
+
+const ContactContainer = (props: userData) => {
+
   return (
     <div className="contactItem">
-      <img className="profileIcon" src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" alt="" />
+      <img className="profileIcon" src={props.profilePic} alt="" />
       <div className="contactInfo">
-        <span className="contactName">Akash</span>
-        <BiCheckDouble id="check" /> <span className="messageText">Hello</span>
+        <span className="contactName">{props.name}</span>
+        <BiCheckDouble id="check" />
+        <span className="messageText"> {props.lastText}</span>
       </div>
-      <span className="messageText">10:30 PM</span>
+      <span className="messageText">{props.lastTextTime}</span>
     </div>
   );
 }
@@ -40,17 +46,8 @@ const ContactList = () => {
         </div>
 
       </div>
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
-      <ContactContainer />
+      {contactList.map((userData) => (<ContactContainer name={userData.name} profilePic={userData.profilePic}
+        lastText={userData.lastText} lastTextTime={userData.lastTextTime} />))}
     </div>
   )
 }
