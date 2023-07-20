@@ -1,0 +1,42 @@
+.contactItem {
+    display: grid;
+    grid-template-columns: 20px 250px 50px;
+    // width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    background: white;
+
+
+}
+
+.profileIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 19px;
+}
+
+.contactName {
+    width: 100%;
+    font-size: 16px;
+    color: black;
+}
+
+.messageText {
+    width: 20%;
+    font-size: 14px;
+    margin-top: 3px;
+    color: rgba (0, 0, 0, 0.8);
+}
+
+.messageTime {
+    font-size: 12px;
+    justify-self: center;
+}

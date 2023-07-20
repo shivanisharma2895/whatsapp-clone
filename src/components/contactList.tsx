@@ -2,10 +2,8 @@ import { BiFilter } from "react-icons/bi"
 import { BsFillChatLeftTextFill } from "react-icons/bs"
 import { AiOutlineMore } from "react-icons/ai"
 import { FaUsers } from "react-icons/fa"
-import { BiCheckDouble } from "react-icons/bi"
 import { contactList } from "../data/contact-list-data"
 import { userData } from "../interfaces/userData"
-
 
 const ContactContainer = (props: userData) => {
 
@@ -14,13 +12,14 @@ const ContactContainer = (props: userData) => {
       <img className="profileIcon" src={props.profilePic} alt="" />
       <div className="contactInfo">
         <span className="contactName">{props.name}</span>
-        <BiCheckDouble id="check" />
+
         <span className="messageText"> {props.lastText}</span>
       </div>
-      <span className="messageText">{props.lastTextTime}</span>
+      <span className="messageTime">{props.lastTextTime}</span>
     </div>
   );
 }
+
 
 
 
@@ -38,13 +37,13 @@ const ContactList = () => {
         <AiOutlineMore id="line" />
       </div>
       <div className='searchBox'>
-        <BiFilter id="filter" />
+
         <div className='searchContainer'>
           <img className='searchIcon' src='https://cdn-icons-png.flaticon.com/128/149/149852.png' alt='' />
           <input className='searchInput' placeholder='Search or start new chat' />
 
         </div>
-
+        <BiFilter id="filter" />
       </div>
       {contactList.map((userData) => (<ContactContainer name={userData.name} profilePic={userData.profilePic}
         lastText={userData.lastText} lastTextTime={userData.lastTextTime} />))}
