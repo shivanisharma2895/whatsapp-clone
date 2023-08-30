@@ -17,5 +17,5 @@ const ConversationComponent = () => {
     </div>
 
   )
-}
+};
 export default ConversationComponent
